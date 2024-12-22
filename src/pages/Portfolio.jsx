@@ -6,7 +6,10 @@ import Breadcrumb from "../components/Breadcrumb";
 import React, { Fragment } from "react";
 
 const Portfolio = () => {
-  const paths = [{ label: "Portfolio", href: "" }];
+  const paths = [
+    { label: "Home >", href: "" },
+    { label: "Portfolio", href: "/portfolio" },
+  ];
 
   return (
     <Fragment>

@@ -1,18 +1,21 @@
-import OurPortfolio from "../components/OurPortfolio";
-import Questions from "../components/Questions";
-import Testimonials from "../components/Testimonials";
 import Breadcrumb from "../components/Breadcrumb";
+import Solution from "../components/Solutions";
+import Questions from "../components/Questions";
 
 import React, { Fragment } from "react";
 
 const Solutions = () => {
-  const paths = [{ label: "Portfolio", href: "" }];
+  const paths = [
+    { label: "Home >", href: "/" },
+    { label: "Solutions", href: "/solutions" },
+  ];
 
   return (
     <Fragment>
-      <Breadcrumb items={paths} />
-      <Solutions />
-
+      <div className="bg-gray-200">
+        <Breadcrumb items={paths} />
+      </div>
+      <Solution />
       <Questions />
     </Fragment>
   );

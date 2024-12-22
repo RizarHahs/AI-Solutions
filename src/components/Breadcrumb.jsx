@@ -23,7 +23,7 @@ const Breadcrumb = ({
   ],
 }) => {
   return (
-    <nav aria-label="Breadcrumb">
+    <nav aria-label="Breadcrumb" className="pt-3">
       <ol className="flex items-center space-x-2 ml-20">
         <li className="flex items-center">
           <Link

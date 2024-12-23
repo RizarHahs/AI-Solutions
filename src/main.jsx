@@ -5,7 +5,10 @@ import Layout from "./Layout";
 import Home from "./pages/Home";
 import Portfolio from "./pages/Portfolio";
 import Solutions from "./pages/Solutions";
-import ContactUs from "./components/ContactUs";
+import ContactUs from "./pages/ContactUs";
+import More from "./pages/More";
+import Login from "./components/Login";
+import Signup from "./components/Signup";
 
 const router = createBrowserRouter([
   {
@@ -27,6 +30,18 @@ const router = createBrowserRouter([
       {
         path: "contactus",
         element: <ContactUs />,
+      },
+      {
+        path: "more",
+        element: <More />,
+      },
+      {
+        path: "login",
+        element: <Login />,
+      },
+      {
+        path: "signup",
+        element: <Signup />,
       },
     ],
   },

@@ -1,4 +1,5 @@
 import React from "react";
+import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 
 const Testimonials = () => {
   return (
@@ -13,8 +14,9 @@ const Testimonials = () => {
           </h1>
         </div>
 
-        <div className="flex items-center gap-8 justify-between px-20 ">
+        <div className="flex items-center gap-5 justify-between px-12 ">
           {/* Zoomerr */}
+          <IoIosArrowBack className="text-xl" />
           <div className="basis-[50%] bg-white p-10 flex flex-col items-center gap-8">
             <div className="flex items-center gap-2">
               <img src="/banner/zoomerr.png" alt="" />
@@ -48,6 +50,7 @@ const Testimonials = () => {
               <p>Role</p>
             </div>
           </div>
+          <IoIosArrowForward className="text-xl" />
         </div>
       </div>
     </div>

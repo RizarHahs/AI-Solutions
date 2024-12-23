@@ -14,10 +14,8 @@ const Portfolio = () => {
   return (
     <Fragment>
       <Breadcrumb items={paths} />
-      <div className="flex flex-col justify-between gap-[450px]">
-        <OurPortfolio />
-        <Testimonials />
-      </div>
+      <OurPortfolio />
+      <Testimonials />
       <Questions />
     </Fragment>
   );

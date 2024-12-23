@@ -64,7 +64,7 @@ const ContactUs = () => {
               <label htmlFor="labelName">Label Name</label>
               <div className="relative flex rounded p-2 bg-gray-200 border-b-2 border-gray-400 items-center justify-between">
                 <input
-                  className="bg-gray-200 outline-none"
+                  className="bg-gray-200 outline-none w-full"
                   type="text"
                   placeholder="Placeholder"
                   id="labelName"

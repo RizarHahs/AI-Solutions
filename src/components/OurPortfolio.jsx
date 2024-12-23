@@ -2,7 +2,7 @@ import React from "react";
 
 const OurPortfolio = () => {
   return (
-    <div className="mt-20 mb-48 h-[100vh] flex justify-center">
+    <div className="mt-20 mb-20 flex justify-center">
       <div className="flex flex-col gap-20 mb-20">
         {/* head title */}
         <div className="text-center">

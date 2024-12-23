@@ -8,17 +8,17 @@ const Navbar = () => {
   return (
     <div className="h-[70px] border-b-gray-200 pl-20 pr-20 flex items-center justify-between">
       {/* Logo & Title  */}
-      <div className="flex items-center gap-3">
+      <Link to="/" className="flex items-center gap-3">
         <img src="/footer/cross.png" alt="" />
         <h2 className=" font-medium text-gray-500 text-2xl">AI Solutions</h2>
-      </div>
+      </Link>
       {/* Navigations Links  */}
       <div className="flex gap-7 font-sans font-semibold text-gray-700">
         {menuItems.map((item) => (
           <Link to={item.href}>{item.label}</Link>
         ))}
 
-        <Link className="flex items-center justify-center gap-2">
+        <Link to="/more" className="flex items-center justify-center gap-2">
           More
           <span>
             <GoChevronDown className="text-[20px]" />
@@ -27,12 +27,18 @@ const Navbar = () => {
       </div>
       {/* Login Signup  */}
       <div className="flex gap-2">
-        <button className="border-[2px] font-semibold border-blue text-blue px-5 py-[6px]">
+        <Link
+          to="/login"
+          className="border-[2px] font-semibold border-blue text-blue px-5 py-[6px]"
+        >
           Log In
-        </button>
-        <button className="border-[2px] font-semibold border-blue text-white bg-blue px-5 py-[6px]">
+        </Link>
+        <Link
+          to="/signup"
+          className="border-[2px] font-semibold border-blue text-white bg-blue px-5 py-[6px]"
+        >
           Sign Up
-        </button>
+        </Link>
       </div>
     </div>
   );
